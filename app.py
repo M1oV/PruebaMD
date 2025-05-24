@@ -126,6 +126,8 @@ def option(opt):
                                    e1=e1 + 1,
                                    e2=e2 + 1)
         return render_template('option3.html')
+        from grafo_contagio import visualizar_grafo_relaciones
+        visualizar_grafo_relaciones(relaciones, trabajador_inicio, trabajador_fin)
 
     elif opt == 4:
         if request.method == 'POST':
